@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    body{
+        width: 100vw;
+        height: 100vh;
+        background: url(../../image/981a83df144a57fe7df6aaa8b2965f6d.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .container{
+            width: 35%;
+            background-color: white;
+            position: relative;
+            top: -100px;
+            border: gray solid 2px;
+            border-radius: 15px;
+            padding: 45px 15px;
+            .clock{
+                text-align: center;
+                margin-bottom: 15px;
+                font-size: 40px;
+                height: 60%;
+            }
+            .buttons{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 40%;
+                .btn{
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 10px;
+                    border: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: background-color .5s ;
+                }
+                .playbtn{
+                    margin-right: 10px;
+                    background-color: rgb(0,100% ,0,0.8);
+                    &:hover{
+                        background-color: lighten(rgb(0,100% ,0,0.8),20%);
+                    }
+                }
+                .stoped{
+                    margin-right: 10px;
+                    background-color: rgb(255, 255, 0);
+                    &:hover{
+                        background-color: lighten(rgb(255, 255, 0),20%);
+                    }
+                }
+                .returnbtn{
+                    background-color: rgb(100%,0 ,0,0.8);
+                    &:hover{
+                        background-color: lighten( rgb(100%,0 ,0,0.8),20%);
+                    }
+                }
+            }
+        }
+    }
+}
+ 

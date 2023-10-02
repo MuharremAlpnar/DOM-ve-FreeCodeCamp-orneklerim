@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+* body {
+  width: 100vw;
+  height: 100vh;
+  background: url(../../image/ankara-milli-kutuphane-nerede-nasil-gidilir-giris-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* body .container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -75px;
+}
+* body .container-heading {
+  background-color: #121212;
+  color: antiquewhite;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: antiquewhite solid 3px;
+  border-radius: 5px;
+}
+* body .container .container-main {
+  color: #121212;
+  background-color: antiquewhite;
+  text-align: center;
+  padding: 30px 25px 15px 25px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+* body .container .container-main .what-say {
+  margin-bottom: 10px;
+}
+* body .container .container-main .who {
+  margin-bottom: 20px;
+  color: red;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+* body .container .container-main .next {
+  display: block;
+  width: 25%;
+  margin: 0 auto;
+  padding: 7px;
+  background-color: #121212;
+  color: antiquewhite;
+  border-radius: 5px;
+  border: none;
+}
+* body .container .container-main .next:hover {
+  background-color: #454545;
+}/*# sourceMappingURL=styles.css.map */

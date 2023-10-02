@@ -1,0 +1,75 @@
+$renk1:antiquewhite;
+$renk2:#121212;
+$renk3:red;
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    body{
+        width: 100vw;
+        height: 100vh;
+        background:  url(../../image/ankara-milli-kutuphane-nerede-nasil-gidilir-giris-1.jpg); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .container{
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: -75px;
+            &-heading{
+                background-color:$renk2;
+                color: $renk1;
+                width: 50%;
+                display: flex;        
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 20px;
+                padding: 10px;
+                border: $renk1 solid 3px;
+                border-radius: 5px;
+            }
+            .container-main{
+                color: $renk2;
+                background-color: $renk1;
+                text-align: center;
+                padding: 30px 25px 15px 25px;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                .what-say{
+                    margin-bottom: 10px;
+                }
+                .who{
+                    margin-bottom: 20px;
+                    color: $renk3;
+                    text-transform: uppercase;
+                    font-size: 1.25rem;
+                    font-weight: bold;
+                }
+                .next{
+                    display: block;
+                    width: 25%;
+                    margin: 0 auto;
+                    padding: 7px;
+                    background-color: $renk2;
+                    color: $renk1;
+                    border-radius: 5px;
+                    border: none;
+                    &:hover{
+                        background-color: lighten($renk2, 20%);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,103 @@
+$tik:orange;
+$ekle:rgba(0,255,34,1);
+$cop:red;
+$beyaz:white;
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    body{
+        width: 100vw;
+        height: 100vh;
+        background:  url(../../image/cef3e1f2b244f777f1dd886d6a760a12.jpg); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        // background-attachment: fixed;
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .task-container{
+            width: 50%; //düzeltilecek
+            background-color: $beyaz;
+            padding: 15px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            input{
+                flex: 5;
+                border-radius: 10px;
+                padding: 5px;
+                border:gray solid 1px;
+                &:focus{
+                    outline: none;
+                    border:$ekle solid 1px;
+                }
+            }
+            button{
+                color: $ekle;
+                margin-left: 20px;
+                width: 30px;
+                height: 30px;
+                border:$ekle solid 2px ;
+                border-radius: 5px;
+                background-color: $beyaz;
+                font-size: 1.5rem;
+                transition: .4s;
+                &:hover{
+                    box-shadow: 0px 0px 50px 10px $ekle;
+                    color: $beyaz;
+                    background-color:$ekle;
+                }
+            }
+        }
+        .task{
+            width: 50%; //düzeltilecek
+            background-color: $beyaz;
+            padding: 15px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 15px;
+            margin-bottom: 10px;
+            p{  
+                flex: 8;
+                margin-right: 20px;
+                text-align: center;
+            }
+            button{
+                flex: 1;
+                margin-left: 10px;
+                height: 50px;
+                width: 50px;
+                background-color: $beyaz;
+                border-radius: 8px;
+                transition: .5s;
+                .fa-solid{
+                    font-size: 1.5rem;
+                }
+            }
+            #tik{
+                border: $tik solid 2px;
+                color: $tik;
+                &:hover{
+                    color: $beyaz;
+                    background-color: $tik;
+                }
+            }
+            #cop{
+                border: $cop solid 2px;
+                color: $cop;
+                &:hover{
+                    color: $beyaz;
+                    background-color: $cop;
+                }
+            }
+        }
+}
+}
